@@ -41,9 +41,11 @@ a:hover{
     justify-content: center;
     padding: 15px;
     margin-top: 100px;
+    background-color: rgba(246, 197, 123, 0.4)
 }
 .logo h1 {
     padding-left: 15px;
+    opacity: 1;
 }
 .logo img {
     height: 100px;
@@ -63,4 +65,28 @@ a:hover{
     flex-direction: column;
     margin-left: 48px;
     margin-top: 60px;
+}
+
+.form-title{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.form-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 55px;
+    
+}
+.form-row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    width: 200px;
+}
+.button-container {
+    display: flex;
+    flex-direction: column;
+    width: 5rem;
 }

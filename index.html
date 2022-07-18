@@ -23,10 +23,41 @@
             <!-- right side -->
             <div class="form-side">
                 <div class="form-title">
-                    <h1>It's new Era of Cat networking!</h1>
+                    <p>It's new Era of Cat networking! Let's get discover who's broken the vase today!</p>
+                    <p>Meown-Up to get started!</p>
                 </div>
+                
                 <form action="#" method="post">
-                    
+                    <div class="form-container">
+                        <div class="form-row">
+                            <label for="fname">First Name</label>
+                            <input type="text" name="fname" id="fname" required>
+                        </div>
+                        <div class="form-row">
+                            <label for="lname">Last Name</label>
+                            <input type="text" name="lname" id="lname" required>
+                        </div>
+                        <div class="form-row">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" required>
+                        </div>
+                        <div class="form-row">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" name="phone" id="phone" required>
+                        </div>
+                        <div class="form-row">
+                            <label for="pass">Password</label>
+                            <input type="password" name="pass" id="pass" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" title="Your password must contain UpperCase, LowerCase and Number" required>
+                        </div>
+                        <div class="form-row">
+                            <label for="pass-confirm">Confirm Password</label>
+                            <input type="password" name="pass-confirm" id="pass-confirm" required>
+                        </div>
+                    </div>
+                    <div class="button-container">
+                        <button type="submit">Create Account</button>
+                        <p>Already have an Meowccount?<a href="#">Log in</a></p>
+                    </div>
                 </form>
             </div>
     </div>

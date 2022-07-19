@@ -20,7 +20,7 @@ a:link{
     color: black;
 }
 a:hover{
-    color: orange;
+    color: #ffa500;
 }
 /* left-side */
 .sidebar {
@@ -104,4 +104,89 @@ a:hover{
     outline: none;
     border-color: rgb(0, 145, 255);
     box-shadow: 1px 1px 3px rgb(0, 145, 255);
+}
+
+.button-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-top: 2rem;
+    padding-left: 10px;
+}
+
+button {
+    font-size: 1rem;
+    width: 20%;
+    height: 2.5rem;
+    border: none;
+    border-radius: 0.3rem;
+    background-color: #f1d6ae;
+}
+
+button:hover{
+    box-shadow: 1px 1px 7px rgb(255, 157, 0);
+    transition:  box-shadow 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.button-container a{
+    color: #ffa500;
+}
+.button-container a:hover{
+    color: #f1d6ae;
+}
+
+@media screen and (max-width:950px) {
+    .container {
+        position: relative;
+        display: flex;
+        flex-flow: column;
+        background-image: url('../images/bg.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: background-image 1s ease-in-out;
+        margin: 10px;
+        padding-bottom: 25px;
+    }
+    .sidebar {
+        display: flex;
+        justify-content: space-between;
+        flex-flow: column;
+        background-image: none;
+    }
+    .logo {
+        margin-top: 1rem;
+        
+    }
+    .credit-link {
+        position: absolute;
+        bottom: 0;
+    }
+    .form-side {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 10px;
+    }
+    .form-title {
+        text-align: center;
+        width: auto;
+       
+    }
+    .form-container {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+    .form-container p{
+        width: auto;
+    }
+    .form-row {
+        width: 80%;
+    }
+    .button-container {
+        display: flex;
+        align-items: center;
+        padding: 0;
+    }
 }

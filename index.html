@@ -52,6 +52,9 @@
                             <div class="form-row">
                                 <label for="pass">Password</label>
                                 <input type="password" name="pass" id="pass" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" title="Your password must contain UpperCase, LowerCase and Number" required>
+                                <div class='error-wrapper'>
+                                    <div class='pass-error-msg'>* Passwords do not match</div>
+                                </div>
                             </div>
                             <div class="form-row">
                                 <label for="pass-confirm">Confirm Password</label>
@@ -65,5 +68,6 @@
                 </form>
             </div>
     </div>
+    <script src="./js/script.js"></script>
 </body>
 </html>

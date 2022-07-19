@@ -9,7 +9,6 @@ body{
     font-size: 16px;
     font-weight: normal;
     margin: 0 auto;
-    width: 90vw;
 }
 
 .container{
@@ -24,7 +23,7 @@ a:hover{
     color: orange;
 }
 /* left-side */
-.logo-side {
+.sidebar {
     flex: 1;
     display: flex;
     justify-content: space-between;
@@ -36,17 +35,15 @@ a:hover{
 }
 .logo {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding: 15px;
+    gap: 10px;
+    padding: 10px;
     margin-top: 100px;
     background-color: rgba(246, 197, 123, 0.4)
 }
-.logo h1 {
-    padding-left: 15px;
-    opacity: 1;
-}
+
 .logo img {
     height: 100px;
     width: 100px;
@@ -63,6 +60,7 @@ a:hover{
     flex: 2;
     display: flex;
     flex-direction: column;
+    gap: 38px;
     margin-left: 48px;
     margin-top: 60px;
 }
@@ -70,23 +68,40 @@ a:hover{
 .form-title{
     font-size: 2rem;
     font-weight: bold;
+    width: 90%;
 }
+.form-container p{
+    width: 100%;
+    font-size: 2rem;
+    font-weight: normal;
+    margin: 0;
 
+}
 .form-container {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 55px;
-    
-}
-.form-row {
-    display: flex;
-    flex-direction: column;
+    flex-flow: row wrap;
+    gap: 2rem;
+    box-shadow: 0px 6px 6px -6px gray;
     margin-bottom: 2rem;
-    width: 200px;
+    padding-bottom: 2rem;  
 }
-.button-container {
+
+.form-row{
     display: flex;
-    flex-direction: column;
-    width: 5rem;
+    flex-flow: column wrap;
+    gap: 5px;
+    width: 35%; 
+}
+
+.form-container input{
+    font-size: 1.4rem;
+    border: 2px solid;
+    border-radius: 5px;
+    border-color: rgba(0, 0, 0, 0.5);
+}
+
+.form-container input:focus{
+    outline: none;
+    border-color: rgb(0, 145, 255);
+    box-shadow: 1px 1px 3px rgb(0, 145, 255);
 }
